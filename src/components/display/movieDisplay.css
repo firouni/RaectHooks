@@ -1,0 +1,37 @@
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+    margin: auto;
+}
+
+.search-container {
+    display: flex;
+    align-content: stretch;
+    width: 60%;
+    margin-top: 10px;
+}
+.fa-magnifying-glass {
+    max-height: fit-content;
+    max-width: fit-content;
+}
+
+.rateContainer {
+    border: none;
+    background-color: transparent;
+}
+.fa-star {
+    color: tan;
+    size: 25px;
+}
+
+.mlist-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15%;
+}
+
+.card-container {}
+
