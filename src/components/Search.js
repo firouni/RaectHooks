@@ -1,7 +1,7 @@
 import React from "react";
 import Rate from "./Rate";
 import {InputGroup,FormControl} from "react-bootstrap";
-import "../display/movieDisplay.css";
+import "../App.css";
 
 function Search ({setSearch,rate,setRate}) {
     return (

@@ -1,7 +1,8 @@
 import React from "react";
-import Rate from "../search/Rate";
+import Rate from "./Rate";
 import { Card } from "react-bootstrap";
-import "./movieDisplay.css";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 function MovieCard ({movie}) {
         console.log(movie)
@@ -16,6 +17,9 @@ function MovieCard ({movie}) {
                     <Card.Text> {movie.description} </Card.Text>
                     <Rate rate={movie.rating} />
                 </Card.ImgOverlay>
+                <Link to={`/trailer/${movie.id}`}>
+                    <button>More details</button>
+                </Link>
             </Card>
         </div>
     )

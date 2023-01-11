@@ -1,8 +1,14 @@
 .App {
-  margin-left: 150px;
-  margin-right: 150px;
-  background-color: wheat;
+  margin-left: 120px;
+  margin-right: 120px;
+  color: black;
+  background-image: url(https://www.wipremiertrivia.com/wp-content/uploads/2018/02/Movie-Wallpaper.jpg);
+  background-color: ghostwhite;
+  background-position: center;
+  background-size: cover;
   text-align: center;
+  min-height: 100%;
+  min-width: auto;
 }
 
 .App-logo {
@@ -12,15 +18,20 @@
 
 .nav-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   width: 90%;
   margin: auto;
 }
+.me-auto {
+  display: flex;
+  justify-content: flex-end;
+
+}
 
 .search-container {
   display: flex;
-  align-content: stretch;
+  align-content: space-around;
+  align-content: center;
   width: 60%;
   margin-top: 10px;
 }
@@ -38,11 +49,13 @@
   size: 25px;
 }
 
-.mlist-container {
+.list-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 15%;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
-.card-container {}
+/*.card-container {}
+
+.trailerContainer {}*/

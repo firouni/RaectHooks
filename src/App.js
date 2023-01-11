@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 import './App.css';
-import Add from './components/add/Add';
-import MovieList from './components/display/movieList';
-import Navbarr from './components/navbar/Navbar';
-import Search from './components/search/Search';
+import Add from './components/Add';
+import MovieList from './components/movieList';
+import Navbarr from './components/Navbar';
+import Search from './components/Search';
+import Trailer from './components/Trailer';
+import { Routes, Route } from "react-router-dom";
 import { moviesData } from "./moviesData";
         console.log(moviesData)
 
@@ -24,6 +26,12 @@ function App() {
       <Search setSearch={setSearch} rate={rate} setRate={setRate} />
       <Add addHandler={addHandler}/>
       <MovieList movieList={movieList} search={search} rate={rate} />
+      
+      <Trailer/>
+      <Routes>
+        <Route path='/movies' element={<MovieList/>}/>
+        <Route path='/trailer/:id' element={<Trailer movieList={movieList} />}/>
+      </Routes>
     </div>
   );
 }

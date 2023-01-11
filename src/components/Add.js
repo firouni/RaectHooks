@@ -2,7 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Button,Modal } from "react-bootstrap";
 import { InputGroup,Form } from "react-bootstrap";
-import "../display/movieDisplay.css";
+import "../App.css";
+import { v4 as uuidv4 } from 'uuid';
 
 function Add({addHandler}) {
     //modal manipulation
@@ -19,7 +20,7 @@ function Add({addHandler}) {
     //add new movie
     const addMovie=()=>{
         addHandler({
-            id:Math.random(),
+            id:uuidv4(),
             name:name,
             description:description,
             date:date,

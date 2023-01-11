@@ -1,5 +1,5 @@
 import React from "react";
-import "../display/movieDisplay.css";
+import "../App.css";
 
 function Rate ({rate,setRate}) {
     const arrStar = [1, 2, 3, 4, 5]

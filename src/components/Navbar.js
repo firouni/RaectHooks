@@ -1,6 +1,6 @@
 import React from "react";
 import {Navbar,Nav} from "react-bootstrap";
-//import "../display/movieDisplay.css";
+import "../App.css";
 
 function Navbarr () {
     return (
