@@ -9,7 +9,7 @@ export const moviesData = [
       date: '2014',
       type: 'Action | Crime',
       description:
-        "A relentlessly-paced hybrid of gritty crime thriller and Lovecraftian supernatural horror, The Devil's Mile follows a trio of kidnappers who take an ill-advised detour en route to deliver...",
+        "A relentlessly-paced hybrid of gritty crime thriller and Love craftian supernatural horror, The Devil's Mile follows a trio of kidnappers who take an ill-advised detour en route to deliver...",
         isDone:false
       },
     {

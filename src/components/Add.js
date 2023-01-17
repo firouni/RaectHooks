@@ -4,6 +4,7 @@ import { Button,Modal } from "react-bootstrap";
 import { InputGroup,Form } from "react-bootstrap";
 import "../App.css";
 import { v4 as uuidv4 } from 'uuid';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Add({addHandler}) {
     //modal manipulation
@@ -33,7 +34,7 @@ function Add({addHandler}) {
     }
 
     return (
-        <>
+        <div className="adds">
         <Button variant="primary" onClick={handleShow}>
             ADD NEW MOVIE
         </Button>
@@ -64,7 +65,7 @@ function Add({addHandler}) {
                 <Button variant="primary" onClick={addMovie}>SAVE CHANGES</Button>
             </Modal.Footer>
         </Modal>
-        </>
+        </div>
     );
 }
 

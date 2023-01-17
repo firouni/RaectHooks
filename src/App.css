@@ -1,14 +1,11 @@
 .App {
-  margin-left: 120px;
-  margin-right: 120px;
   color: black;
   background-image: url(https://www.wipremiertrivia.com/wp-content/uploads/2018/02/Movie-Wallpaper.jpg);
   background-color: ghostwhite;
   background-position: center;
   background-size: cover;
-  text-align: center;
-  min-height: 100%;
-  min-width: auto;
+  display: block;
+  justify-content: space-between;
 }
 
 .App-logo {
@@ -18,9 +15,10 @@
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-content: space-between;
   width: 90%;
-  margin: auto;
+  margin: 0 200px 0 250px;
 }
 .me-auto {
   display: flex;
@@ -30,9 +28,10 @@
 
 .search-container {
   display: flex;
-  align-content: space-around;
+  align-content: space-between;
   align-content: center;
   width: 60%;
+  margin: 0 250px;
   margin-top: 10px;
 }
 .fa-magnifying-glass {
@@ -45,17 +44,41 @@
   background-color: transparent;
 }
 .fa-star {
-  color: tan;
+  color: rgb(226, 143, 34);
   size: 25px;
 }
 
 .list-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: left;
   gap: 20px;
 }
 
-/*.card-container {}
+.card-container {
+  border-image: round;
+  display: flex;
+  flex-wrap: wrap;
+}
+.bg-dark-text-white {
+  display: flex;
+  justify-items: auto;
+  height: 400px;
+  width: 400px;
+}
 
-.trailerContainer {}*/
+.adds {
+  align-items: stretch;
+  display: block;
+}
+
+.imgoverlay {
+  color: transparent;
+}
+.imgoverlay:hover {
+  color: white;
+  background-blend-mode: lighten;
+  opacity:0.5;
+  background-color: Black;
+  z-index:10;
+}

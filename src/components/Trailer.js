@@ -10,7 +10,7 @@ function Trailer ({movieList}) {
     console.log('ids',filmID)
     return (
         <div className="trailerContainer">
-            
+            <video href="https://www.youtube.com/watch?v=3ncFpP8GP4g"/>
         </div>
     )
 }

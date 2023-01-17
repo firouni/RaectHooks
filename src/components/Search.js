@@ -2,6 +2,7 @@ import React from "react";
 import Rate from "./Rate";
 import {InputGroup,FormControl} from "react-bootstrap";
 import "../App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Search ({setSearch,rate,setRate}) {
     return (
